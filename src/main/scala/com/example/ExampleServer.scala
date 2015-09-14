@@ -18,6 +18,8 @@ import slick.driver.H2Driver.api._
 
 import scala.concurrent.Future
 
+import com.example.db.{User, Users}
+
 object ExampleServerMain extends ExampleServer
 
 class ExampleServer extends HttpServer {
@@ -30,7 +32,13 @@ class ExampleServer extends HttpServer {
     // the query interface for the Coffees table
     val coffees: TableQuery[Coffees] = TableQuery[Coffees]
 
+    val users = TableQuery[Users]
+
     val setupAction: DBIO[Unit] = DBIO.seq(
+      // create the user schema
+      users.schema.create,
+
+
       // Create the schema by combining the DDLs for the Suppliers and Coffees
       // tables using the query interfaces
       (suppliers.schema ++ coffees.schema).create,

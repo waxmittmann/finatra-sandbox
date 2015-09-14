@@ -1,14 +1,151 @@
-2015-09-13 13:17:17,825 INF                  ExampleServerMain$        Process started
-2015-09-13 13:17:19,542 DEB                  MessageBodyModule$        Configuring MessageBodyManager
-2015-09-13 13:17:19,570 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
-2015-09-13 13:17:19,590 INF                  ExampleServerMain$        Done resolving clients: [].
-2015-09-13 13:17:19,593 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
-2015-09-13 13:17:19,825 INF                  ExampleServerMain$        Warming up.
-2015-09-13 13:17:20,063 INF                  HttpRouter                Adding routes
+2015-09-14 20:54:48,532 INF                  ExampleServerMain$        Process started
+2015-09-14 20:54:50,310 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 20:54:50,371 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 20:54:50,389 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 20:54:50,390 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 20:54:50,630 INF                  ExampleServerMain$        Warming up.
+2015-09-14 20:54:50,873 INF                  HttpRouter                Adding routes
 GET     /ping
 GET     /bong
-2015-09-13 13:17:20,459 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
-2015-09-13 13:17:20,469 INF                  ExampleServerMain$        http server started on port: 9999
-2015-09-13 13:17:20,470 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
-2015-09-13 13:17:20,471 INF                  ExampleServerMain$        App started.
-2015-09-13 13:17:20,472 INF                  ExampleServerMain$        Startup complete, server ready.
+GET     /write
+GET     /query
+2015-09-14 20:54:51,220 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 20:54:51,230 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 20:54:51,231 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 20:54:51,232 INF                  ExampleServerMain$        App started.
+2015-09-14 20:54:51,233 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 20:55:39,047 INF ca375262415673a6 PingController            ping
+2015-09-14 20:55:42,094 INF ac2c810b87e4e252 PingController            Ho ho ho
+2015-09-14 20:56:06,601 INF                  ExampleServerMain$        Process started
+2015-09-14 20:56:07,960 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 20:56:07,987 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 20:56:07,999 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 20:56:08,000 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 20:56:08,222 INF                  ExampleServerMain$        Warming up.
+2015-09-14 20:56:08,437 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-14 20:56:08,739 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 20:56:08,749 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 20:56:08,751 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 20:56:08,751 INF                  ExampleServerMain$        App started.
+2015-09-14 20:56:08,752 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 20:56:11,451 INF 6e3d9f16a18cf606 PingController            Ho ho ho
+2015-09-14 20:58:37,741 INF                  ExampleServerMain$        Process started
+2015-09-14 20:58:38,989 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 20:58:39,013 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 20:58:39,030 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 20:58:39,031 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 20:58:39,331 INF                  ExampleServerMain$        Warming up.
+2015-09-14 20:58:39,685 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-14 20:58:39,940 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 20:58:39,951 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 20:58:39,952 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 20:58:39,953 INF                  ExampleServerMain$        App started.
+2015-09-14 20:58:39,954 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 20:58:42,325 INF 3fa0ac9951fb3cdf PingController            Ho ho ho
+2015-09-14 20:58:45,267 INF 496c875f430abb1f PingController            Ho ho ho
+2015-09-14 20:59:31,902 INF                  ExampleServerMain$        Process started
+2015-09-14 20:59:33,247 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 20:59:33,276 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 20:59:33,295 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 20:59:33,297 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 20:59:33,659 INF                  ExampleServerMain$        Warming up.
+2015-09-14 20:59:33,965 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-14 20:59:34,226 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 20:59:34,237 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 20:59:34,238 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 20:59:34,239 INF                  ExampleServerMain$        App started.
+2015-09-14 20:59:34,240 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 20:59:35,161 INF 5c5d4bd65450703f PingController            Ho ho ho
+2015-09-14 20:59:36,740 INF 11241505559117d6 PingController            Ho ho ho
+2015-09-14 20:59:38,099 INF b5f3f36cb9c75819 PingController            Ho ho ho
+2015-09-14 20:59:39,137 INF e824c2b6abed703f PingController            Ho ho ho
+2015-09-14 21:43:35,985 INF                  ExampleServerMain$        Process started
+2015-09-14 21:43:37,266 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 21:43:37,295 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 21:43:37,308 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 21:43:37,310 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 21:43:37,561 INF                  ExampleServerMain$        Warming up.
+2015-09-14 21:43:37,753 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-14 21:43:43,044 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 21:43:43,053 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 21:43:43,054 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 21:43:43,054 INF                  ExampleServerMain$        App started.
+2015-09-14 21:43:43,055 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 21:53:12,415 INF 2dde9b693a096b9d PingController            Ho ho ho
+2015-09-14 21:53:15,548 INF 4c5f9f85d9a0e721 PingController            Bo bo bo
+2015-09-14 21:53:59,345 INF                  ExampleServerMain$        Process started
+2015-09-14 21:54:00,665 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 21:54:00,697 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 21:54:00,711 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 21:54:00,712 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 21:54:00,926 INF                  ExampleServerMain$        Warming up.
+2015-09-14 21:54:01,122 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-14 21:54:06,358 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 21:54:06,367 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 21:54:06,368 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 21:54:06,368 INF                  ExampleServerMain$        App started.
+2015-09-14 21:54:06,369 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 21:54:46,271 INF 35f85731686ea527 PingController            Bo bo bo
+2015-09-14 21:56:03,845 INF 780dcc59421c80d9 PingController            Ho ho ho
+2015-09-14 21:56:05,787 INF 7d41f8992aa18af2 PingController            Bo bo bo
+2015-09-14 21:56:51,781 INF                  ExampleServerMain$        Process started
+2015-09-14 21:56:53,239 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 21:56:53,279 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 21:56:53,292 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 21:56:53,295 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 21:56:53,551 INF                  ExampleServerMain$        Warming up.
+2015-09-14 21:56:53,798 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-14 21:56:59,158 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 21:56:59,168 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 21:56:59,169 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 21:56:59,170 INF                  ExampleServerMain$        App started.
+2015-09-14 21:56:59,171 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 21:57:01,458 INF f8887cfb5ccd3ef8 PingController            Bo bo bo
+2015-09-14 21:57:02,626 INF 45be9441f2d2e0fb PingController            Bo bo bo
+2015-09-14 21:57:05,323 INF cd08ac0cc6855168 PingController            Ho ho ho
+2015-09-14 21:57:08,064 INF f469290c40a817d0 PingController            Bo bo bo
+2015-09-14 22:10:44,779 INF                  ExampleServerMain$        Process started
+2015-09-14 22:10:45,945 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-14 22:10:45,970 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-14 22:10:45,981 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-14 22:10:45,982 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-14 22:10:46,152 INF                  ExampleServerMain$        Warming up.
+2015-09-14 22:10:46,343 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+GET     /write2
+GET     /read2
+2015-09-14 22:10:51,586 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-14 22:10:51,595 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-14 22:10:51,596 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-14 22:10:51,597 INF                  ExampleServerMain$        App started.
+2015-09-14 22:10:51,597 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-14 22:10:52,531 INF f6c1c12bd87597d3 PingController            Ho ho ho
+2015-09-14 22:10:53,402 INF 3166b7cdd746b63d PingController            Ho ho ho
+2015-09-14 22:10:54,289 INF 99246b7d4e5adc97 PingController            Ho ho ho

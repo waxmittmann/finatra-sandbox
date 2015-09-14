@@ -1,0 +1,352 @@
+2015-09-13 13:17:17,825 INF                  ExampleServerMain$        Process started
+2015-09-13 13:17:19,542 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 13:17:19,570 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 13:17:19,590 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 13:17:19,593 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 13:17:19,825 INF                  ExampleServerMain$        Warming up.
+2015-09-13 13:17:20,063 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+2015-09-13 13:17:20,459 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 13:17:20,469 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 13:17:20,470 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 13:17:20,471 INF                  ExampleServerMain$        App started.
+2015-09-13 13:17:20,472 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 13:28:54,733 INF                  ExampleServerMain$        Process started
+2015-09-13 13:28:56,197 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 13:28:56,238 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 13:28:56,264 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 13:28:56,266 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 13:28:56,506 INF                  ExampleServerMain$        Warming up.
+2015-09-13 13:28:56,714 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     write
+GET     query
+2015-09-13 13:28:57,140 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 13:28:57,156 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 13:28:57,158 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 13:28:57,158 INF                  ExampleServerMain$        App started.
+2015-09-13 13:28:57,159 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 13:40:44,716 INF 34d89bb46757576f PingController            ping
+2015-09-13 13:40:49,923 DEB 4424220525548154 RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:50709) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 13:41:06,178 DEB 58877f8b30a9f064 RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:50709) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 13:41:34,021 INF 884af8ab348fbf16 PingController            Smoke da weed
+2015-09-13 14:41:04,516 INF                  ExampleServerMain$        Process started
+2015-09-13 14:41:06,128 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 14:41:06,159 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 14:41:06,186 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 14:41:06,188 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 14:41:06,465 INF                  ExampleServerMain$        Warming up.
+2015-09-13 14:41:06,678 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     write
+GET     query
+2015-09-13 14:41:07,035 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 14:41:07,044 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 14:41:07,045 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 14:41:07,046 INF                  ExampleServerMain$        App started.
+2015-09-13 14:41:07,047 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 14:41:20,905 INF 6f148f647ef7bc45 PingController            Smoke da weed
+2015-09-13 14:41:24,122 DEB ac28f27e358fefcf RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:52323) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 14:41:52,511 DEB 01177b71e4c9edc8 RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:52323) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 14:41:58,893 DEB 498c182618d8da91 RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:52323) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 14:42:00,576 DEB 8de4c78e32681b7c RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:52323) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 14:42:36,392 INF                  ExampleServerMain$        Process started
+2015-09-13 14:42:37,643 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 14:42:37,671 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 14:42:37,693 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 14:42:37,694 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 14:42:37,916 INF                  ExampleServerMain$        Warming up.
+2015-09-13 14:42:38,122 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     write
+GET     query
+2015-09-13 14:42:38,406 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 14:42:38,415 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 14:42:38,416 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 14:42:38,416 INF                  ExampleServerMain$        App started.
+2015-09-13 14:42:38,417 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 14:43:11,050 INF                  ExampleServerMain$        Process started
+2015-09-13 14:43:12,359 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 14:43:12,389 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 14:43:12,401 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 14:43:12,402 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 14:43:12,631 INF                  ExampleServerMain$        Warming up.
+2015-09-13 14:43:12,857 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     write
+GET     query
+2015-09-13 14:43:13,133 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 14:43:13,144 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 14:43:13,146 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 14:43:13,146 INF                  ExampleServerMain$        App started.
+2015-09-13 14:43:13,147 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 14:43:32,568 DEB 7c32934f1381ffb4 RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:52389) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 14:43:43,614 DEB 1a4ca3386af6b1f9 RoutingService            Request("GET /write", from /0:0:0:0:0:0:0:1:52389) not found in registered routes: GET     /ping, GET     /bong, GET     write, GET     query
+2015-09-13 14:43:51,200 INF 7a9d62041b654253 PingController            Smoke da weed
+2015-09-13 14:57:27,623 INF                  ExampleServerMain$        Process started
+2015-09-13 14:57:29,651 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 14:57:29,694 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 14:57:29,720 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 14:57:29,722 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 14:57:30,052 INF                  ExampleServerMain$        Warming up.
+2015-09-13 14:57:30,344 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-13 14:57:30,753 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 14:57:30,792 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 14:57:30,793 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 14:57:30,794 INF                  ExampleServerMain$        App started.
+2015-09-13 14:57:30,795 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 15:07:16,037 INF ef8b8ac1fffd6af7 PingController            Smoke da weed
+2015-09-13 15:07:27,964 INF adcbe75aa7ecf509 PingController            Smoke da weed
+2015-09-13 15:07:30,985 INF f95f2056b93c38d7 PingController            Ho ho ho
+2015-09-13 15:11:05,934 INF                  ExampleServerMain$        Process started
+2015-09-13 15:11:07,920 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 15:11:07,962 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 15:11:07,980 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 15:11:07,981 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 15:11:08,276 INF                  ExampleServerMain$        Warming up.
+2015-09-13 15:11:08,579 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-13 15:11:09,024 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 15:11:09,043 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 15:11:09,045 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 15:11:09,047 INF                  ExampleServerMain$        App started.
+2015-09-13 15:11:09,048 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 15:11:19,057 INF 497a0eb8b8dc1b5c PingController            Ho ho ho
+2015-09-13 15:11:49,507 INF                  ExampleServerMain$        Process started
+2015-09-13 15:11:51,224 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 15:11:51,281 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 15:11:51,313 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 15:11:51,315 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 15:11:51,560 INF                  ExampleServerMain$        Warming up.
+2015-09-13 15:11:51,744 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-13 15:11:52,034 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 15:11:52,047 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 15:11:52,048 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 15:11:52,049 INF                  ExampleServerMain$        App started.
+2015-09-13 15:11:52,049 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 15:12:10,163 INF 371f5f3f5ada6009 PingController            Ho ho ho
+2015-09-13 15:14:16,885 INF                  ExampleServerMain$        Process started
+2015-09-13 15:14:18,658 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-13 15:14:18,706 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-13 15:14:18,722 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-13 15:14:18,725 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-13 15:14:18,966 INF                  ExampleServerMain$        Warming up.
+2015-09-13 15:14:19,210 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /bong
+GET     /write
+GET     /query
+2015-09-13 15:14:19,573 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-13 15:14:19,583 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-13 15:14:19,584 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-13 15:14:19,585 INF                  ExampleServerMain$        App started.
+2015-09-13 15:14:19,585 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-13 15:14:36,230 INF 1aaed630873a18f9 PingController            Ho ho ho
+2015-09-13 15:17:18,553 INF 07128f5cbb5721b8 PingController            Bo bo bo
+2015-09-13 15:17:18,584 ERR 07128f5cbb5721b8 FinatraDefaultExceptionMapper internal server error
+java.util.concurrent.RejectedExecutionException: Task slick.backend.DatabaseComponent$DatabaseDef$$anon$2@7bc8a538 rejected from java.util.concurrent.ThreadPoolExecutor@49c9acf1[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 1]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2048) ~[na:1.7.0_67]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:821) [na:1.7.0_67]
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1372) [na:1.7.0_67]
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$1.execute(ExecutionContextImpl.scala:136) ~[scala-library-2.11.7.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$class.runSynchronousDatabaseAction(DatabaseComponent.scala:224) ~[slick_2.11-3.0.3.jar:na]
+	at slick.jdbc.JdbcBackend$DatabaseDef.runSynchronousDatabaseAction(JdbcBackend.scala:38) ~[slick_2.11-3.0.3.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$class.runInContext(DatabaseComponent.scala:201) ~[slick_2.11-3.0.3.jar:na]
+	at slick.jdbc.JdbcBackend$DatabaseDef.runInContext(JdbcBackend.scala:38) ~[slick_2.11-3.0.3.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$class.runInContext(DatabaseComponent.scala:148) ~[slick_2.11-3.0.3.jar:na]
+	at slick.jdbc.JdbcBackend$DatabaseDef.runInContext(JdbcBackend.scala:38) ~[slick_2.11-3.0.3.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$class.runInContext(DatabaseComponent.scala:148) ~[slick_2.11-3.0.3.jar:na]
+	at slick.jdbc.JdbcBackend$DatabaseDef.runInContext(JdbcBackend.scala:38) ~[slick_2.11-3.0.3.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$class.runInternal(DatabaseComponent.scala:75) ~[slick_2.11-3.0.3.jar:na]
+	at slick.jdbc.JdbcBackend$DatabaseDef.runInternal(JdbcBackend.scala:38) ~[slick_2.11-3.0.3.jar:na]
+	at slick.backend.DatabaseComponent$DatabaseDef$class.run(DatabaseComponent.scala:72) ~[slick_2.11-3.0.3.jar:na]
+	at slick.jdbc.JdbcBackend$DatabaseDef.run(JdbcBackend.scala:38) ~[slick_2.11-3.0.3.jar:na]
+	at com.example.ping.PingController$$anonfun$6.apply(PingController.scala:69) ~[classes/:na]
+	at com.example.ping.PingController$$anonfun$6.apply(PingController.scala:65) ~[classes/:na]
+	at com.twitter.finatra.http.internal.marshalling.CallbackConverter$$anonfun$createResponseCallback$7$$anonfun$apply$5.apply(CallbackConverter.scala:85) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.internal.marshalling.CallbackConverter$$anonfun$createResponseCallback$7$$anonfun$apply$5.apply(CallbackConverter.scala:85) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.util.Try$.apply(Try.scala:13) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Future$.apply(Future.scala:99) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.finatra.http.internal.marshalling.CallbackConverter$$anonfun$createResponseCallback$7.apply(CallbackConverter.scala:84) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.internal.marshalling.CallbackConverter$$anonfun$createResponseCallback$7.apply(CallbackConverter.scala:83) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Service$$anon$5.apply(Service.scala:23) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$5.apply(Service.scala:22) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.http.internal.routing.Route.handleMatch(Route.scala:61) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.internal.routing.Routes.handle(Routes.scala:38) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.internal.routing.RoutingService.apply(RoutingService.scala:30) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.internal.routing.RoutingService.apply(RoutingService.scala:10) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.http.filters.ExceptionMappingFilter.liftedTree1$1(ExceptionMappingFilter.scala:22) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.filters.ExceptionMappingFilter.apply(ExceptionMappingFilter.scala:22) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.filters.ExceptionMappingFilter.apply(ExceptionMappingFilter.scala:17) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7$$anon$1.apply(Filter.scala:59) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.http.filters.HttpResponseFilter.apply(HttpResponseFilter.scala:28) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.filters.HttpResponseFilter.apply(HttpResponseFilter.scala:19) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7$$anon$1.apply(Filter.scala:59) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.http.filters.AccessLoggingFilter.apply(AccessLoggingFilter.scala:23) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.filters.AccessLoggingFilter.apply(AccessLoggingFilter.scala:11) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7$$anon$1.apply(Filter.scala:59) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.http.filters.StatsFilter.apply(StatsFilter.scala:89) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finatra.http.filters.StatsFilter.apply(StatsFilter.scala:59) ~[finatra-http_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7.apply(Filter.scala:70) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$7.apply(Filter.scala:70) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$7.apply(Filter.scala:70) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.filters.MergedFilter.apply(MergedFilter.scala:13) ~[finatra-utils_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7$$anon$1.apply(Filter.scala:59) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.logging.filter.TraceIdMDCFilter.apply(TraceIdMDCFilter.scala:12) ~[finatra-slf4j_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7$$anon$1.apply(Filter.scala:59) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finatra.logging.filter.LoggingMDCFilter.apply(LoggingMDCFilter.scala:17) ~[finatra-slf4j_2.11-2.0.0.RC1.jar:2.0.0.RC1]
+	at com.twitter.finagle.Filter$$anon$7.apply(Filter.scala:70) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$7.apply(Filter.scala:70) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.ServiceProxy.apply(Service.scala:115) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.tracing.ServerDestTracingProxy$$anon$1.apply(DestinationTracing.scala:32) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.filter.DtabStatsFilter.apply(DtabStatsFilter.scala:37) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.service.StatsFilter.apply(StatsFilter.scala:126) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.filter.ExceptionSourceFilter.apply(ExceptionSourceFilter.scala:33) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.filter.MkJvmFilter$$anon$1.apply(JvmFilter.scala:20) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.filter.HandletimeFilter.apply(HandletimeFilter.scala:43) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.tracing.AnnotatingTracingFilter.apply(TraceInitializerFilter.scala:150) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.filter.DtabFilter.apply(DtabFilter.scala:22) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.filter.DtabFilter.apply(DtabFilter.scala:11) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$7$$anon$1.apply(Filter.scala:59) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.filter.HttpNackFilter.apply(HttpNackFilter.scala:38) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.filter.HttpNackFilter.apply(HttpNackFilter.scala:35) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$7.apply(Filter.scala:70) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:12) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.HttpServerTraceInitializer$$anonfun$4$$anonfun$apply$2$$anonfun$apply$3.apply(Codec.scala:305) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.HttpServerTraceInitializer$$anonfun$4$$anonfun$apply$2$$anonfun$apply$3.apply(Codec.scala:305) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.TraceInfo$$anonfun$letTraceIdFromRequestHeaders$2.apply(Codec.scala:251) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.util.Local.let(Local.scala:131) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.finagle.context.Context$class.let(Context.scala:176) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.context.MarshalledContext.let(Context.scala:209) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.tracing.Trace$.letId(Trace.scala:167) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.TraceInfo$.letTraceIdFromRequestHeaders(Codec.scala:249) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.HttpServerTraceInitializer$$anonfun$4$$anonfun$apply$2.apply(Codec.scala:305) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.HttpServerTraceInitializer$$anonfun$4$$anonfun$apply$2.apply(Codec.scala:305) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.util.Local.let(Local.scala:131) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.finagle.context.Context$class.let(Context.scala:176) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.context.LocalContext.let(LocalContext.scala:8) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.tracing.Trace$.letTracer(Trace.scala:185) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.HttpServerTraceInitializer$$anonfun$4.apply(Codec.scala:304) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.HttpServerTraceInitializer$$anonfun$4.apply(Codec.scala:303) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$8.apply(Filter.scala:174) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Service$$anon$2.apply(Service.scala:15) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.filter.MonitorFilter$$anonfun$apply$1.apply(MonitorFilter.scala:32) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.filter.MonitorFilter$$anonfun$apply$1.apply(MonitorFilter.scala:32) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.util.Future$$anonfun$monitored$1.apply$mcV$sp(Future.scala:137) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$$anonfun$apply$1.apply$mcV$sp(Monitor.scala:38) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$$anonfun$apply$1.apply(Monitor.scala:38) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$$anonfun$apply$1.apply(Monitor.scala:38) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$$anonfun$using$1.apply(Monitor.scala:103) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$.restoring(Monitor.scala:110) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$.using(Monitor.scala:101) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$class.apply(Monitor.scala:37) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Monitor$$anon$1.apply(Monitor.scala:142) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Future$.monitored(Future.scala:136) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.finagle.filter.MonitorFilter.apply(MonitorFilter.scala:31) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.Filter$$anon$2.apply(Filter.scala:85) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.httpx.codec.HttpServerDispatcher.dispatch(HttpServerDispatcher.scala:82) ~[finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.dispatch.GenSerialServerDispatcher$$anonfun$com$twitter$finagle$dispatch$GenSerialServerDispatcher$$loop$1.apply(ServerDispatcher.scala:51) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.finagle.dispatch.GenSerialServerDispatcher$$anonfun$com$twitter$finagle$dispatch$GenSerialServerDispatcher$$loop$1.apply(ServerDispatcher.scala:45) ~[finagle-core_2.11-6.28.0.jar:6.28.0]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:890) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Future$$anonfun$flatMap$1.apply(Future.scala:889) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise$Transformer.liftedTree1$1(Promise.scala:100) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise$Transformer.k(Promise.scala:100) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise$Transformer.apply(Promise.scala:110) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise$Transformer.apply(Promise.scala:91) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise$$anon$2.run(Promise.scala:373) ~[util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.run(Scheduler.scala:193) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.concurrent.LocalScheduler$Activation.submit(Scheduler.scala:140) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.concurrent.LocalScheduler.submit(Scheduler.scala:222) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.concurrent.Scheduler$.submit(Scheduler.scala:84) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise.runq(Promise.scala:342) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise.updateIfEmpty(Promise.scala:713) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise.update(Promise.scala:686) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.util.Promise.setValue(Promise.scala:662) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.concurrent.AsyncQueue.offer(AsyncQueue.scala:88) [util-core_2.11-6.27.0.jar:6.27.0]
+	at com.twitter.finagle.netty3.transport.ChannelTransport.handleUpstream(ChannelTransport.scala:51) [finagle-core_2.11-6.28.0.jar:6.28.0]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) [netty-3.10.1.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelRequestStatsHandler.messageReceived(ChannelRequestStatsHandler.scala:35) [finagle-core_2.11-6.28.0.jar:6.28.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:145) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.messageReceived(SimpleChannelUpstreamHandler.java:124) [netty-3.10.1.Final.jar:na]
+	at com.twitter.finagle.httpx.codec.RespondToExpectContinue.messageReceived(RespondToExpectContinue.scala:30) [finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpContentEncoder.messageReceived(HttpContentEncoder.java:82) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.handler.codec.http.HttpServerCodec.handleUpstream(HttpServerCodec.java:56) [netty-3.10.1.Final.jar:na]
+	at com.twitter.finagle.httpx.SafeHttpServerCodec.handleUpstream(Codec.scala:38) [finagle-httpx_2.11-6.28.0.jar:6.28.0]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.SimpleChannelHandler.messageReceived(SimpleChannelHandler.java:142) [netty-3.10.1.Final.jar:na]
+	at com.twitter.finagle.netty3.channel.ChannelStatsHandler.messageReceived(ChannelStatsHandler.scala:80) [finagle-core_2.11-6.28.0.jar:6.28.0]
+	at org.jboss.netty.channel.SimpleChannelHandler.handleUpstream(SimpleChannelHandler.java:88) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108) [netty-3.10.1.Final.jar:na]
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42) [netty-3.10.1.Final.jar:na]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_67]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_67]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_67]
