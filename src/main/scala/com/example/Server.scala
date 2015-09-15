@@ -20,9 +20,9 @@ import scala.concurrent.Future
 
 import com.example.db.{User, Users}
 
-object ExampleServerMain extends ExampleServer
+object ServerMain extends Server
 
-class ExampleServer extends HttpServer {
+class Server extends HttpServer {
   val db = Database.forConfig("h2mem1")
 
   try {

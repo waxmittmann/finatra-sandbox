@@ -6,7 +6,7 @@ import com.twitter.inject.server.FeatureTest
 
 class ExampleFeatureTest extends FeatureTest {
 
-  override val server = new EmbeddedHttpServer(new ExampleServer)
+  override val server = new EmbeddedHttpServer(new Server)
 
   "Server" should {
     "ping" in {

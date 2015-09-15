@@ -14111,3 +14111,45 @@ GET     /httpJson
 2015-09-15 23:05:55,081 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
 2015-09-15 23:05:55,081 INF                  ExampleServerMain$        App started.
 2015-09-15 23:05:55,082 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-15 23:10:04,329 INF                  ServerMain$               Process started
+2015-09-15 23:10:05,834 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-15 23:10:05,864 INF                  ServerMain$               Resolving Finagle clients before warmup
+2015-09-15 23:10:05,890 INF                  ServerMain$               Done resolving clients: [].
+2015-09-15 23:10:05,893 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-15 23:10:06,228 INF                  ServerMain$               Warming up.
+2015-09-15 23:10:06,411 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /write
+GET     /query
+GET     /query2
+POST    /posttest
+POST    /jsontest
+GET     /jsontest2
+GET     /http
+GET     /httpJson
+2015-09-15 23:10:06,741 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-15 23:10:06,750 INF                  ServerMain$               http server started on port: 9999
+2015-09-15 23:10:06,751 INF                  ServerMain$               Enabling health endpoint on port 9990
+2015-09-15 23:10:06,752 INF                  ServerMain$               App started.
+2015-09-15 23:10:06,753 INF                  ServerMain$               Startup complete, server ready.
+2015-09-15 23:10:31,661 INF                  ServerMain$               Process started
+2015-09-15 23:10:32,984 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-15 23:10:33,010 INF                  ServerMain$               Resolving Finagle clients before warmup
+2015-09-15 23:10:33,022 INF                  ServerMain$               Done resolving clients: [].
+2015-09-15 23:10:33,025 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-15 23:10:33,253 INF                  ServerMain$               Warming up.
+2015-09-15 23:10:33,481 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /write
+GET     /query
+GET     /query2
+POST    /posttest
+POST    /jsontest
+GET     /jsontest2
+GET     /http
+GET     /httpJson
+2015-09-15 23:10:33,798 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-15 23:10:33,813 INF                  ServerMain$               http server started on port: 9999
+2015-09-15 23:10:33,815 INF                  ServerMain$               Enabling health endpoint on port 9990
+2015-09-15 23:10:33,816 INF                  ServerMain$               App started.
+2015-09-15 23:10:33,817 INF                  ServerMain$               Startup complete, server ready.

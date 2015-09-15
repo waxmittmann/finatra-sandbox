@@ -8,7 +8,7 @@ class ExampleStartupTest extends Test {
 
   val server = new EmbeddedHttpServer(
     stage = Stage.PRODUCTION,
-    twitterServer = new ExampleServer)
+    twitterServer = new Server)
 
   "server" in {
     server.assertHealthy()
