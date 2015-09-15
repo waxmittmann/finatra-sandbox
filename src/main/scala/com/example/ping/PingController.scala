@@ -62,4 +62,9 @@ class PingController extends Controller {
     }
   }
 
+  post("/jsontest") { request: Request =>
+    println("Hello kitty")
+    "Read " + scala.io.Source.fromInputStream(request.getInputStream()).mkString
+  }
+
 }

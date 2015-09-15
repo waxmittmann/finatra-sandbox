@@ -16,3 +16,40 @@ POST    /posttest
 2015-09-15 17:54:23,882 INF                  ExampleServerMain$        App started.
 2015-09-15 17:54:23,884 INF                  ExampleServerMain$        Startup complete, server ready.
 2015-09-15 17:54:44,604 INF ee360ec0d1976988 PingController            ping
+2015-09-15 17:57:24,484 DEB 2f11b48ba21d2216 RoutingService            Request("POST /jsontest", from /0:0:0:0:0:0:0:1:59391) not found in registered routes: GET     /ping, GET     /write, GET     /query, GET     /query2, POST    /posttest
+2015-09-15 17:57:59,853 INF                  ExampleServerMain$        Process started
+2015-09-15 17:58:01,760 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-15 17:58:01,790 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-15 17:58:01,811 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-15 17:58:01,813 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-15 17:58:02,178 INF                  ExampleServerMain$        Warming up.
+2015-09-15 17:58:02,396 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /write
+GET     /query
+GET     /query2
+POST    /posttest
+POST    /jsontest
+2015-09-15 17:58:02,818 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-15 17:58:02,831 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-15 17:58:02,832 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-15 17:58:02,833 INF                  ExampleServerMain$        App started.
+2015-09-15 17:58:02,834 INF                  ExampleServerMain$        Startup complete, server ready.
+2015-09-15 18:00:17,065 INF                  ExampleServerMain$        Process started
+2015-09-15 18:00:19,147 DEB                  MessageBodyModule$        Configuring MessageBodyManager
+2015-09-15 18:00:19,219 INF                  ExampleServerMain$        Resolving Finagle clients before warmup
+2015-09-15 18:00:19,240 INF                  ExampleServerMain$        Done resolving clients: [].
+2015-09-15 18:00:19,243 INF                  FinagleBuildRevision$     Resolved Finagle build revision: (rev=de123b8f9d074c4e345ebd67e1a0e870bb921544)
+2015-09-15 18:00:19,734 INF                  ExampleServerMain$        Warming up.
+2015-09-15 18:00:20,000 INF                  HttpRouter                Adding routes
+GET     /ping
+GET     /write
+GET     /query
+GET     /query2
+POST    /posttest
+POST    /jsontest
+2015-09-15 18:00:20,544 INF                  DefaultTracer$            Tracer: com.twitter.finagle.zipkin.thrift.SamplingTracer
+2015-09-15 18:00:20,564 INF                  ExampleServerMain$        http server started on port: 9999
+2015-09-15 18:00:20,565 INF                  ExampleServerMain$        Enabling health endpoint on port 9990
+2015-09-15 18:00:20,567 INF                  ExampleServerMain$        App started.
+2015-09-15 18:00:20,568 INF                  ExampleServerMain$        Startup complete, server ready.
