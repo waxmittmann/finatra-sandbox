@@ -1,6 +1,7 @@
 package com.example.ping
 
 import com.example.db._
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.twitter.finagle.httpx.Request
 import com.twitter.finatra.http.Controller
 import slick.driver.H2Driver.api._
@@ -13,17 +14,24 @@ import scala.util.{Success, Failure}
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.DefaultScalaModule
 
+import scalaj.http.Http
+
 /*
     Having this as an inner class breaks jackson with a weird error.
     (ObjectMapper.config() defined twice, something like that)
  */
 case class ContentMap(title: String, content: String, byline: String)
 case class PersonJson(name: String, age: Int)
+@JsonIgnoreProperties(ignoreUnknown = true)
+case class GithubContentResponse(name: String, path: String, sha: String)
+
 
 class PingController extends Controller {
   val db = Database.forConfig("h2mem1")
   val users = TableQuery[Users]
   var at = 0
+
+  val mapper = new ObjectMapper().registerModule(DefaultScalaModule)
 
   get("/ping") { request: Request =>
     info("ping")
@@ -72,17 +80,12 @@ class PingController extends Controller {
     }
   }
 
-
-  val mapper = new ObjectMapper()
-  mapper.registerModule(DefaultScalaModule)
-
   post("/jsontest") { request: Request =>
     println("Hello kitty")
     try {
       val contentJson = scala.io.Source.fromInputStream(request.getInputStream()).mkString
 
       val parsedContentMap: PersonJson = mapper.readValue(contentJson, classOf[PersonJson])
-//      val parsedContentMap: ContentMap = mapper.readVal.readValue[ContentMap](contentJson)
 
       "Read json with " + parsedContentMap.name + ", " + parsedContentMap.age
     } catch {
@@ -90,21 +93,12 @@ class PingController extends Controller {
     }
   }
 
-
-//  val mapper = new ObjectMapper().registerModule(DefaultScalaModule)
-
   get("/jsontest2") { request: Request =>
     println("Hi!")
 
     try {
-//      val mapper = new ObjectMapper()
-//      mapper.registerModule(DefaultScalaModule)
-
-      println(1)
       val contentJson = "{\"title\":\"Charlie Sheen continues his epic rant against Kim Kardashian... then apologizes\",\"content\":\"Dear Kim, my extreme bad. really embarrassed by my actions. I was already pissed about some other crap that had nothing to do with you. I heard a story that bothered me. wrote some trash you didn't deserve. Ever. I'm an idiot as often as I'm a genius. that day, clearly I was the former. xox c #ShutUpSheen  Read\",\"byline\":\"TMZ\"}"
-      println(2)
       val contentParsed = mapper.readValue(contentJson, classOf[ContentMap])
-      println(3)
 
       println(contentParsed.title)
       "woo woo"
@@ -112,6 +106,21 @@ class PingController extends Controller {
       case ex: Throwable => println("Error is: " + ex.getMessage)
     }
     "goo goo"
+  }
+
+  get("/http") { request: Request =>
+    Http("https://api.github.com/repos/mybatis/spring/contents/license.txt").asString
+    //    Http("http://www.google.com").asString
+  }
+
+  get("/httpJson") { request: Request =>
+    try {
+      val result: String = Http("https://api.github.com/repos/mybatis/spring/contents/license.txt").asString.body
+      val contentParsed: GithubContentResponse = mapper.readValue(result, classOf[GithubContentResponse])
+      "Got: " + contentParsed.name + ", " + contentParsed.sha
+    } catch {
+      case ex: Throwable => "Error is: " + ex.getMessage
+    }
   }
 
 }

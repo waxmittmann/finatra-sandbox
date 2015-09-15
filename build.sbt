@@ -25,6 +25,8 @@ lazy val versions = new {
   val mockito = "1.9.5"
   val scalatest = "2.2.3"
   val specs2 = "2.3.12"
+  val jackson = "2.6.1"
+  val slick = "3.0.3"
 }
 
 //aopalliance was being included from somewhere else, but wasn't found in IntelliJ without this
@@ -53,19 +55,21 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % versions.scalatest % "test",
   "org.specs2" %% "specs2" % versions.specs2 % "test",
 
-  "com.typesafe.slick" %% "slick" % "3.0.3",
+  "com.typesafe.slick" %% "slick" % versions.slick,
+  "com.typesafe.slick" %% "slick-codegen" % versions.slick,
   "org.slf4j" % "slf4j-nop" % "1.6.4",
-  "com.typesafe.slick" %% "slick-codegen" % "3.0.3",
   "com.h2database" % "h2" % "1.3.175",
 
 //  "com.fasterxml.jackson.core" % "jackson-core" % "2.5.3",
 //  "com.fasterxml.jackson.core" % "jackson-databind" % "2.5.3",
 //  "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % "2.5.3"
 
-  "com.fasterxml.jackson.core" % "jackson-core" % "2.6.1",
-  "com.fasterxml.jackson.core" % "jackson-databind" % "2.6.1",
-  "com.fasterxml.jackson.core" % "jackson-annotations" % "2.6.1",
-  "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % "2.6.1"
+  "org.scalaj" % "scalaj-http_2.11" % "1.1.5",
+
+  "com.fasterxml.jackson.core" % "jackson-core" % versions.jackson,
+  "com.fasterxml.jackson.core" % "jackson-databind" % versions.jackson,
+  "com.fasterxml.jackson.core" % "jackson-annotations" % versions.jackson,
+  "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % versions.jackson
 
 /*
   "com.fasterxml.jackson.core" % "jackson-core" % "2.6.1",
