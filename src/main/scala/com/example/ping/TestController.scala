@@ -122,5 +122,4 @@ class TestController extends Controller {
       case ex: Throwable => "Error is: " + ex.getMessage
     }
   }
-
 }

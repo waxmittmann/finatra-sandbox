@@ -1,7 +1,7 @@
 package com.example
 
 //import com.example.db.{Coffees, Suppliers}
-import com.example.ping.TestController
+import com.example.ping.{UsersController, TestController}
 import com.twitter.finagle.httpx.{Response, Request}
 import com.twitter.finatra.http.HttpServer
 import com.twitter.finatra.http.filters.CommonFilters
@@ -44,6 +44,7 @@ class Server extends HttpServer {
       .filter[TraceIdMDCFilter[Request, Response]]
       .filter[CommonFilters]
       .add[TestController]
+      .add[UsersController]
   }
 
 }
