@@ -15,49 +15,24 @@ class PingController extends Controller {
   val users = TableQuery[Users]
   var at = 0
 
-//  val users: TableQuery[Users] = TableQuery[Users]
-
-
   get("/ping") { request: Request =>
     info("ping")
-
-    Database.forURL("jdbc:h2:mem:test1", driver = "org.h2.Driver") withSession {
-      implicit session => {
-        println("At least I can do something")
-      }
-      // <- write queries here
-    }
 
     "pong"
   }
 
-  get("/bong") { request: Request =>
-    info("Smoke da weed")
-    "smokey smokey"
-  }
-
   get("/write") { request: Request =>
-    info("Ho ho ho")
+    info("Inside write")
 
-    try {
-      //      Await.result(db.run(DBIO.seq(
-      //        users += User("Person_" + at),
-      //        users.result.map(println)
-      //      )), Duration.Inf)
+    val dbUpdate = db.run(DBIO.seq(
+      users += User("Person_" + at),
+      users.result.map(println)
+    ))
+    at += 1
 
-      println("I'm tryin!")
-
-      val dbUpdate = db.run(DBIO.seq(
-//        users.schema.create,
-
-        users += User("Person_" + at),
-        users.result.map(println)
-      ))
-
-      dbUpdate onComplete {
-        case Success(posts) => println("Something and " + posts); //db.close
-        case Failure(t) => println("An error has occured: " + t.getMessage); //db.close
-      }
+    dbUpdate onComplete {
+      case Success(posts) => println("Success:" + posts);
+      case Failure(t) => println("Error: " + t.getMessage);
     }
     //finally db.close
 
@@ -67,28 +42,24 @@ class PingController extends Controller {
   get("/query") { request: Request =>
     info("Bo bo bo")
 
-//    try {
-//      Await.result(db.run(DBIO.seq(
-//        users.result.map(println)
-//      )), Duration.Inf)
-//    }
-
-    val result = Await.result(db.run(DBIO.seq(users.result)), Duration.Inf)
+    val result = Await.result(db.run(DBIO.seq(users.result.map(println))), Duration.Inf)
     println("Result is " + result)
     result
-    //finally db.close
   }
 
-  get("/write2") { request: Request =>
-
-  }
-
-  get("/read2") { request: Request =>
+  get("/query2") { request: Request =>
     val q = for (u <- users) yield u.name
-    val a = q.result
-    val f: Seq[String] = Await.result(db.run(a), Duration.Inf)
-    println(f)
-    f
+    val userNames: Seq[String] = Await.result(db.run(q.result), Duration.Inf)
+    println(userNames)
+    userNames
+  }
+
+  post("/posttest") { request: Request =>
+    if (request.containsParam("helloPost")) {
+      "Contained " + request.getParam("helloPost")
+    } else {
+      "No param =("
+    }
   }
 
 }
