@@ -1,4 +1,5 @@
 name := """finatra"""
+
 organization := "com.example"
 
 version := "1.0.0-SNAPSHOT"
@@ -26,9 +27,9 @@ lazy val versions = new {
   val specs2 = "2.3.12"
 }
 
+//aopalliance was being included from somewhere else, but wasn't found in IntelliJ without this
+//(though it worked from command line for some reason)
 libraryDependencies ++= Seq(
-  //It was being included from somewhere else, but wasn't found in IntelliJ without this
-  //(though it worked from command line for some reason)
   "aopalliance" % "aopalliance" % "1.0",
 
   "ch.qos.logback" % "logback-classic" % versions.logback,
@@ -55,5 +56,22 @@ libraryDependencies ++= Seq(
   "com.typesafe.slick" %% "slick" % "3.0.3",
   "org.slf4j" % "slf4j-nop" % "1.6.4",
   "com.typesafe.slick" %% "slick-codegen" % "3.0.3",
-  "com.h2database" % "h2" % "1.3.175"
+  "com.h2database" % "h2" % "1.3.175",
+
+//  "com.fasterxml.jackson.core" % "jackson-core" % "2.5.3",
+//  "com.fasterxml.jackson.core" % "jackson-databind" % "2.5.3",
+//  "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % "2.5.3"
+
+  "com.fasterxml.jackson.core" % "jackson-core" % "2.6.1",
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.6.1",
+  "com.fasterxml.jackson.core" % "jackson-annotations" % "2.6.1",
+  "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % "2.6.1"
+
+/*
+  "com.fasterxml.jackson.core" % "jackson-core" % "2.6.1",
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.6.1",
+  //"com.fasterxml.jackson.datatype" % "jackson-datatype-joda" % "2.6.1",
+  //"com.fasterxml.jackson.core" % "jackson-annotations" % "2.6.1",
+  "com.fasterxml.jackson.module" % "jackson-module-scala_2.11" % "2.6.1"
+  */
 )
