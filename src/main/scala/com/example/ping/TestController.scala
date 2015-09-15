@@ -2,6 +2,7 @@ package com.example.ping
 
 import com.example.db._
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import com.google.inject.Inject
 import com.twitter.finagle.httpx.Request
 import com.twitter.finatra.http.Controller
 import slick.driver.H2Driver.api._
@@ -26,7 +27,7 @@ case class PersonJson(name: String, age: Int)
 case class GithubContentResponse(name: String, path: String, sha: String)
 
 
-class TestController extends Controller {
+class TestController @Inject()(service: FooService) extends Controller {
   val db = Database.forConfig("h2mem1")
   val users = TableQuery[Users]
   var at = 0
@@ -121,5 +122,9 @@ class TestController extends Controller {
     } catch {
       case ex: Throwable => "Error is: " + ex.getMessage
     }
+  }
+
+  get("/callService") { request: Request =>
+    service.doIt()
   }
 }
