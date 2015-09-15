@@ -26,7 +26,7 @@ case class PersonJson(name: String, age: Int)
 case class GithubContentResponse(name: String, path: String, sha: String)
 
 
-class PingController extends Controller {
+class TestController extends Controller {
   val db = Database.forConfig("h2mem1")
   val users = TableQuery[Users]
   var at = 0
